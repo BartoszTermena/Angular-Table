@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="cleanUI">
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Angular Table</title>
+
+
+
+
+    <!-- Angular Version Scripts -->
+    <script 
+src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script 
+src="app.js"></script>
+ 
+    <script 
+src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" 
+src="https://cdn.rawgit.com/JustMaier/6ef7788709d675bd8230/raw/3d39d50e66d8d77e05656ed7dd09298be7e86f1f/ngClickCopy.js"></script>
+
+
+</head>
+
+<body data-ng-controller="MainCtrl as vm">
+                            <div>
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>name</th>
+                                        <th> age </th>
+                                        <th>
+                                                born
+                                        </th>
+                                        <th>
+                                            nationality
+                                        </th>
+    
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr ng-repeat="n in data">
+                                        <td>{{n.name}}</td>
+                                        <td>{{n.age}}</td>
+                                        <td>{{n.born}}</td>
+                                        <td>{{n.nationality}}</td>
+                                    </tr>
+    
+                                    </tbody>
+                                </table>
+                               
+                                <div 
+    style="margin-left:15px;margin-top:10px;float:left">
+                                    Showing {{test.length}} entries
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Page Script -->
+    <style>
+        .highlighted { background: yellow }
+    </style>
+    <script>
+        $(function () {
+          
+            $("[data-toggle=popover]").popover();
+            $("[data-toggle=popover-hover]").popover({
+                trigger: 'hover'
+            });
+            $("[data-toggle=tooltip]").tooltip();
+    
+        });
+    </script>
+    
+    
+</body>
+</html>
+

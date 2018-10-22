@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Chandler",
+    "surname": "Bing",
+    "born": "08_04_1967",
+    "nationality": "American",
+    "profession": "Nobody knows anyway"
+    },
+  {
+    "name": "Joey",
+    "surname": "Tribbiani",
+    "born": "00_00_1967",
+    "nationality": "American",
+    "profession": "Actor"
+    },
+ {
+    "name": "Rachel",
+    "surname": "Green",
+    "born": "05_05_1960",
+    "nationality": "American",
+    "profession": "Actor"
+    }
+]
+
