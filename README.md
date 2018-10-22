@@ -1,1 +1,1 @@
-A project to learn and AngularJS.
+A project to learn AngularJS.
